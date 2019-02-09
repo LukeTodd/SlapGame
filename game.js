@@ -1,10 +1,14 @@
 let health = 100
 
+let healthBar = document.getElementById('health-bar')
+
 let steroids = {
   name: 'steroids',
   modifier: 2,
   description: 'makes you strong'
 }
+
+
 
 function slap(val) {
   health = health - val;
@@ -12,6 +16,7 @@ function slap(val) {
     health = 0
   }
   document.getElementById('display-hp').innerText = health.toString()
+
 }
 
 function feed(val) {
