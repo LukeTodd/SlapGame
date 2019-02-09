@@ -1,3 +1,38 @@
 .btn-primary{
   color: black;
+  background-color: black;
+}
+
+.hockeyimg {
+  max-height: 300px;
+  border-style: solid;
+  border-color: white;
+  border-width: 10px;
+}
+
+.bg-red {
+  background-color: red;
+  border-color: white;
+  border-width: 10px;
+  border-style: solid;
+}
+
+.text-white {
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.btn-margin {
+  margin: 0 auto;
+}
+
+.bg-black {
+  background-color: black;
+
+}
+
+.row2-border {
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
 }

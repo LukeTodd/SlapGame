@@ -12,21 +12,39 @@
 </head>
 
 <body>
-
-	<img src="https://via.placeholder.com/150x200" alt="">
-	<h1>Health</h1>
-	<p id="display-hp"></p>
-
-	<footer>
-		<button onclick="slap(1)" type="button" class="btn btn-primary">Slap</button>
-		<button onclick="slap(5)" type="button" class="btn btn-primary">Kick</button>
-		<button onclick="slap(10)" type="button" class="btn btn-primary">Punch</button>
-	</footer>
-	<section>
-		<button onclick="defaultDisplay()" type="button" class="btn btn-primary">Restore</button>
-		<button type="button" class="btn btn-primary">Double Damage</button>
-		<button type="button" class="btn btn-primary">Do Something</button>
-	</section>
+	<div class="bg-red">
+		<section class="container">
+			<div class="row">
+				<div class="col-12 text-center pt-5">
+					<img class="hockeyimg" src="/hockey-injuries-carcillo.jpg" alt="">
+					<h1 class="text-white">Health</h1>
+					<p class="text-white" id="display-hp"></p>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div class="bg-black">
+		<section class="container">
+			<div class="row py-3 row2-border">
+				<div class="col-4 d-flex justify-content-center">
+					<button onclick="slap(1)" type="button" class=" text-white btn btn-primary d-flex">Hook</button>
+				</div>
+				<div class="col-4 d-flex justify-content-center">
+					<button onclick="slap(3)" type="button" class=" text-white d-flex btn btn-primary">Slash</button>
+				</div>
+				<div class="col-4 d-flex justify-content-center">
+					<button onclick="slap(7)" type="button" class=" text-white d-flex btn btn-primary">Drop the Mitts</button>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div class="class bg-black vh-100">
+		<section class="text-center pt-3">
+			<button type="button" class="text-white btn btn-primary">Feed Alcohol</button>
+			<button onclick="defaultDisplay()" type="button" class="text-white btn btn-primary">Take Steroids</button>
+			<button type="button" class="text-white btn btn-primary">Next Peroid</button>
+		</section>
+	</div>
 
 
 
