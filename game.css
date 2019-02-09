@@ -11,7 +11,7 @@
 }
 
 .bg-red {
-  background-color: red;
+  background-color: orangered;
   border-color: white;
   border-width: 10px;
   border-style: solid;
@@ -35,4 +35,8 @@
   border-bottom-color: white;
   border-bottom-style: solid;
   border-bottom-width: 10px;
+}
+
+.gloria{
+  font-family: 'Gloria Hallelujah', cursive;
 }

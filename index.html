@@ -7,18 +7,30 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 	<link rel="stylesheet" href="game.css">
-	<title>Slap Game</title>
+	<title>Spittin Chiclets</title>
 </head>
 
 <body>
-	<div class="bg-red">
+	<div class="class bg-black">
+		<header class="container">
+			<div class="class row py-3">
+				<div class="class col-12">
+					<h1 class="text-center text-white gloria">Spittin Chiclets</h1>
+				</div>
+			</div>
+		</header>
+	</div>
+	<div class="class bg-black">
 		<section class="container">
-			<div class="row">
-				<div class="col-12 text-center pt-5">
-					<img class="hockeyimg" src="/hockey-injuries-carcillo.jpg" alt="">
-					<h1 class="text-white">Health</h1>
-					<p class="text-white" id="display-hp"></p>
+			<div class="bg-red">
+				<div class="row">
+					<div class="col-12 text-center pt-5">
+						<img class="hockeyimg" src="/assets/photos/hockey-injuries-carcillo.jpg" alt="">
+						<h3 class="text-white pt-3">Health</h3>
+						<p class="text-white pt-2" id="display-hp"></p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -27,10 +39,10 @@
 		<section class="container">
 			<div class="row py-3 row2-border">
 				<div class="col-4 d-flex justify-content-center">
-					<button onclick="slap(1)" type="button" class=" text-white btn btn-primary d-flex">Hook</button>
+					<button onclick="slap(1)" type="button" class=" text-white btn btn-primary d-flex">Slash</button>
 				</div>
 				<div class="col-4 d-flex justify-content-center">
-					<button onclick="slap(3)" type="button" class=" text-white d-flex btn btn-primary">Slash</button>
+					<button onclick="slap(3)" type="button" class=" text-white d-flex btn btn-primary">Cross-Check</button>
 				</div>
 				<div class="col-4 d-flex justify-content-center">
 					<button onclick="slap(7)" type="button" class=" text-white d-flex btn btn-primary">Drop the Mitts</button>
@@ -40,7 +52,7 @@
 	</div>
 	<div class="class bg-black vh-100">
 		<section class="text-center pt-3">
-			<button type="button" class="text-white btn btn-primary">Feed Alcohol</button>
+			<button onclick="feed(5)" type="button" class="text-white btn btn-primary">Feed Alcohol</button>
 			<button onclick="defaultDisplay()" type="button" class="text-white btn btn-primary">Take Steroids</button>
 			<button type="button" class="text-white btn btn-primary">Next Peroid</button>
 		</section>
