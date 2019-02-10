@@ -40,21 +40,24 @@
 		<section class="container">
 			<div class="row py-3 row2-border">
 				<div class="col-4 d-flex justify-content-center">
-					<button onclick="slap(1)" type="button" class=" text-white btn btn-primary d-flex">Slash</button>
+					<button onclick="slap(attacks[0])" type="button" class=" text-white btn btn-primary d-flex">Slash</button>
 				</div>
 				<div class="col-4 d-flex justify-content-center">
-					<button onclick="slap(3)" type="button" class=" text-white d-flex btn btn-primary">Cross-Check</button>
+					<button onclick="slap(attacks[1])" type="button"
+						class=" text-white d-flex btn btn-primary">Cross-Check</button>
 				</div>
 				<div class="col-4 d-flex justify-content-center">
-					<button onclick="slap(7)" type="button" class=" text-white d-flex btn btn-primary">Drop the Mitts</button>
+					<button onclick="slap(attacks[2])" type="button" class=" text-white d-flex btn btn-primary">Drop
+						the
+						Mitts</button>
 				</div>
 			</div>
 		</section>
 	</div>
-	<div class="class bg-black vh-100">
+	<div class="class bg-black some-height">
 		<section class="text-center pt-3">
 			<button onclick="feed(5)" type="button" class="text-white btn btn-primary">Feed Alcohol</button>
-			<button type="button" class="text-white btn btn-primary">Take Steroids</button>
+			<button type="button" onclick="addMods()" class="text-white btn btn-primary">Take Steroids</button>
 			<button onclick="defaultDisplay()" type="button" class="text-white btn btn-primary">Next Peroid</button>
 		</section>
 	</div>

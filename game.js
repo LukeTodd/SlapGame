@@ -5,6 +5,9 @@ let target = {
   items: []
 }
 
+let attacks = [1, 3, 7]
+
+
 let items = {
   steroids: {
     name: 'Steroids',
@@ -18,18 +21,15 @@ function giveSteroids() {
 }
 
 function addMods() {
-  let mod = 1
-  for (let i = 0; target.items.length; i++) {
-    var item = target.items[i];
-    mod += item.modifier;
-  }
-  return mod;
+  attacks[0] = attacks[0] * 2
+  attacks[1] = attacks[1] * 2
+  attacks[2] = attacks[3] * 2
 
 }
 
 
-function slap(val) {
-  health = health - val;
+function slap(attacks) {
+  health = health - attacks;
   if (health < 0) {
     health = 0
   }
@@ -50,6 +50,7 @@ function feed(val) {
 function defaultDisplay() {
   health = 100
   document.getElementById('display-hp').innerText = health.toString()
+  attacks = [1, 3, 7]
 }
 
 defaultDisplay()
