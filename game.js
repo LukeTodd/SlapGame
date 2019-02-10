@@ -23,7 +23,7 @@ function giveSteroids() {
 function addMods() {
   attacks[0] = attacks[0] * 2
   attacks[1] = attacks[1] * 2
-  attacks[2] = attacks[3] * 2
+  attacks[2] = attacks[2] * 2
 
 }
 
