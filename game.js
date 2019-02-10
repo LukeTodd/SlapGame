@@ -1,13 +1,31 @@
 let health = 100
 
-let healthBar = document.getElementById('health-bar')
-
-let steroids = {
-  name: 'steroids',
-  modifier: 2,
-  description: 'makes you strong'
+let target = {
+  health: 100,
+  items: []
 }
 
+let items = {
+  steroids: {
+    name: 'Steroids',
+    modifier: 2,
+    description: "Makes you strong"
+  }
+}
+
+function giveSteroids() {
+  target.items.push(items.steroids)
+}
+
+function addMods() {
+  let mod = 1
+  for (let i = 0; target.items.length; i++) {
+    var item = target.items[i];
+    mod += item.modifier;
+  }
+  return mod;
+
+}
 
 
 function slap(val) {
